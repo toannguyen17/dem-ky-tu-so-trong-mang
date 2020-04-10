@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Đếm ký tự số trong mảng</title>
+</head>
+<body>
+	<p>Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này đếm số ký tự số trong mảng. </p>
+	<button onclick="countNumber()">Tính số phần tử là số</button>
+	<script type="text/javascript">
+		let arr = ['r', 't', 'h', '4', '5', 'q', '3', '8', '9', 'a', 'u', 'y', '9', 't', '0'];
+		function countNumber() {
+			let count = 0;
+			for (let i = 0; i < arr.length; i++) {
+				if (!isNaN(arr[i])) {
+					count++;
+				}
+			}
+			alert('Mảng có ' +count+' ký tự số.');
+		}
+	</script>
+</body>
+</html>
